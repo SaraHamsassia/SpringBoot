@@ -5,15 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="204eaf94-f798-4f37-b5d8-3c21dfd53b04" name="Changes" comment="re initialisation with spring initializr">
-      <change beforePath="$PROJECT_DIR$/projetSpringBoot3/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projetSpringBoot3/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projetSpringBoot3/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projetSpringBoot3/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projetSpringBoot3/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projetSpringBoot3/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projetSpringBoot3/src/main/java/com/example/demo/DemoApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projetSpringBoot3/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projetSpringBoot3/src/test/java/com/example/demo/DemoApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HELP.md" beforeDir="false" afterPath="$PROJECT_DIR$/HELP.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +15,19 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="33862159-2bce-4277-8ff5-f91c2c70f5b3" />
+        <option name="url" value="https://github.com/SaraHamsassia/SpringBoot.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -36,6 +42,9 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "last_opened_file_path": "/Users/hamsassia/Desktop/mes_projets/java/SpringBoot3",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "preferences.editor"
   }
 }]]></component>
@@ -69,12 +78,24 @@
       <option name="project" value="LOCAL" />
       <updated>1703258498468</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="re initialisation with spring initializr">
+      <option name="closed" value="true" />
+      <created>1703258875444</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1703258875444</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update gitignore" />
     <MESSAGE value="re initialisation with spring initializr" />
     <option name="LAST_COMMIT_MESSAGE" value="re initialisation with spring initializr" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

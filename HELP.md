@@ -23,19 +23,21 @@ These additional references should also help you:
 * [Gradle Build Scans – insights for your project's build](https://scans.gradle.com#gradle)
 
 
-### Introduction
+### Mise en place de l'environnement
 
-MySQL:
+* MySQL:
 mysql -u username -p
 SAVAsava&
 show databases;
 use name_databases;
 
-Dépendances ajouter sur spring initializer:
+* Création du projet. Ajout des dépendances suivantes sur https://start.spring.io/:
 Spring Data JPA
 MySQL Driver
-Spring Boot DevTools:permet de redemarrer le serveur tomcat qui est intégré
+Spring Boot DevTools -> L'une des fonctionnalités clés de Spring Boot DevTools est le redémarrage automatique du serveur intégré (comme Tomcat) lorsqu'un changement est détecté dans le code source. Cela permet de recharger rapidement les modifications sans avoir à redémarrer manuellement le serveur, ce qui accélère le processus de développement.
 Spring web services
 
-Permet de générer un 
+* Allez dans "File" (Fichier) > "Project Structure" et ajouter le jdk17 dans SQK.
+* Pom.xml et Maven :
+Bien que le fichier pom.xml contienne la définition des dépendances de votre projet, pour voir les dépendances téléchargées et incluses dans IntelliJ IDEA, vous devriez les voir dans la vue "External Libraries" (Bibliothèques Externes) comme mentionné ci-dessus.
 
