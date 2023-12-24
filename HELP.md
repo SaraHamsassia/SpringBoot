@@ -41,3 +41,6 @@ Spring web services
 * Pom.xml et Maven :
 Bien que le fichier pom.xml contienne la définition des dépendances de votre projet, pour voir les dépendances téléchargées et incluses dans IntelliJ IDEA, vous devriez les voir dans la vue "External Libraries" (Bibliothèques Externes) comme mentionné ci-dessus.
 
+### Annotation Spring
+
+* L'annotation @Entity est une annotation de JPA (Java Persistence API) qui est utilisée dans les frameworks ORM (Object-Relational Mapping) tels que Hibernate pour indiquer qu'une classe représente une entité persistante qui doit être mappée à une table dans une base de données. Hibernate est un framework ORM populaire qui implémente JPA et facilite la persistance des objets dans une base de données relationnelle.
