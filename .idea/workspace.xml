@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="204eaf94-f798-4f37-b5d8-3c21dfd53b04" name="Changes" comment="application.properties et documentation">
+    <list default="true" id="204eaf94-f798-4f37-b5d8-3c21dfd53b04" name="Changes" comment="ajout de tests unitaires">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/SpringBoot3/services/ProduitService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/SpringBoot3/services/ProduitServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HELP.md" beforeDir="false" afterPath="$PROJECT_DIR$/HELP.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/SpringBoot3/SpringBoot3ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/SpringBoot3/SpringBoot3ApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +19,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -214,7 +216,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703434862720</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="ajout de tests unitaires">
+      <option name="closed" value="true" />
+      <created>1703437268726</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1703437268726</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -223,7 +233,8 @@
     <MESSAGE value="Documentation" />
     <MESSAGE value="première entité" />
     <MESSAGE value="application.properties et documentation" />
-    <option name="LAST_COMMIT_MESSAGE" value="application.properties et documentation" />
+    <MESSAGE value="ajout de tests unitaires" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajout de tests unitaires" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
