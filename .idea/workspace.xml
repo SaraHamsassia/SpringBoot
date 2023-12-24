@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="204eaf94-f798-4f37-b5d8-3c21dfd53b04" name="Changes" comment="première entité">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/SpringBoot3/repository/ProduitRepository.java" afterDir="false" />
+    <list default="true" id="204eaf94-f798-4f37-b5d8-3c21dfd53b04" name="Changes" comment="application.properties et documentation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HELP.md" beforeDir="false" afterPath="$PROJECT_DIR$/HELP.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/SpringBoot3/SpringBoot3ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/SpringBoot3/SpringBoot3ApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +69,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.SpringBoot3ApplicationTests.testListerTousProduits">
     <configuration name="SpringBoot3Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.SpringBoot3.SpringBoot3Application" />
       <module name="SpringBoot3" />
@@ -84,8 +83,76 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SpringBoot3ApplicationTests.testCreateProduit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpringBoot3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.SpringBoot3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.SpringBoot3" />
+      <option name="MAIN_CLASS_NAME" value="com.example.SpringBoot3.SpringBoot3ApplicationTests" />
+      <option name="METHOD_NAME" value="testCreateProduit" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBoot3ApplicationTests.testFindProduit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpringBoot3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.SpringBoot3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.SpringBoot3" />
+      <option name="MAIN_CLASS_NAME" value="com.example.SpringBoot3.SpringBoot3ApplicationTests" />
+      <option name="METHOD_NAME" value="testFindProduit" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBoot3ApplicationTests.testListerTousProduits" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpringBoot3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.SpringBoot3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.SpringBoot3" />
+      <option name="MAIN_CLASS_NAME" value="com.example.SpringBoot3.SpringBoot3ApplicationTests" />
+      <option name="METHOD_NAME" value="testListerTousProduits" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBoot3ApplicationTests.testUpdateProduit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpringBoot3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.SpringBoot3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.SpringBoot3" />
+      <option name="MAIN_CLASS_NAME" value="com.example.SpringBoot3.SpringBoot3ApplicationTests" />
+      <option name="METHOD_NAME" value="testUpdateProduit" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SpringBoot3ApplicationTests.testListerTousProduits" />
+        <item itemvalue="JUnit.SpringBoot3ApplicationTests.testFindProduit" />
+        <item itemvalue="JUnit.SpringBoot3ApplicationTests.testUpdateProduit" />
+        <item itemvalue="JUnit.SpringBoot3ApplicationTests.testCreateProduit" />
         <item itemvalue="Application.SpringBoot3Application" />
       </list>
     </recent_temporary>
@@ -139,7 +206,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703430511511</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="application.properties et documentation">
+      <option name="closed" value="true" />
+      <created>1703434862720</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1703434862720</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -147,7 +222,8 @@
     <MESSAGE value="re initialisation with spring initializr" />
     <MESSAGE value="Documentation" />
     <MESSAGE value="première entité" />
-    <option name="LAST_COMMIT_MESSAGE" value="première entité" />
+    <MESSAGE value="application.properties et documentation" />
+    <option name="LAST_COMMIT_MESSAGE" value="application.properties et documentation" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

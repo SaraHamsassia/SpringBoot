@@ -47,8 +47,8 @@ Spring web services
 
 ### Annotation Spring
 
-* L'annotation @Entity est une annotation de JPA (Java Persistence API) qui est utilisée dans les frameworks ORM (Object-Relational Mapping) tels que Hibernate pour indiquer qu'une classe représente une entité persistante qui doit être mappée à une table dans une base de données. Hibernate est un framework ORM populaire qui implémente JPA et facilite la persistance des objets dans une base de données relationnelle.
-
+* @Entity est une annotation de JPA (Java Persistence API) qui est utilisée dans les frameworks ORM (Object-Relational Mapping) tels que Hibernate pour indiquer qu'une classe représente une entité persistante qui doit être mappée à une table dans une base de données. Hibernate est un framework ORM populaire qui implémente JPA et facilite la persistance des objets dans une base de données relationnelle.
+* @Autowired est utilisée pour indiquer à Spring qu'une dépendance doit être injectée automatiquement dans un composant Spring.
 ### Interface
 
 * [JpaRepository]: En étendant cette interface dans une interface repository personnalisée pour une entité, vous bénéficiez automatiquement de ces fonctionnalités CRUD sans avoir à les implémenter manuellement.
