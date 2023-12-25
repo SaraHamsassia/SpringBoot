@@ -66,6 +66,25 @@ Cochez la case "Enable annotation processing"
   * Logique Métier : En utilisant l'annotation @Service, vous pouvez encapsuler et isoler la logique métier de l'application dans des classes de service, ce qui permet de séparer la logique métier de la logique de présentation et d'accès aux données dans votre application.
 * @Data de lombok génère automatiquement les méthodes toString(), equals(), hashCode(), Getter et Setter
 * @AllArgsConstructor et @NoArgsConstructor de Lombok sont utilisées pour générer automatiquement des constructeurs dans une classe
+* @RestController est essentiellement une combinaison de @Controller et @ResponseBody. Lorsque vous utilisez @RestController sur une classe, chaque méthode de cette classe renvoie directement une réponse HTTP au format JSON sans avoir besoin d'utiliser des annotations supplémentaires comme @ResponseBody
+* @RequestMapping permet de mapper des URL à des méthodes de contrôleur, gérer différentes méthodes HTTP, et intégrer des variables de chemin et des paramètres de média. Elle est essentielle pour le développement d'API RESTful avec Spring
+* @CrossOrigin est utilisée dans Spring pour gérer les problèmes de CORS (Cross-Origin Resource Sharing) dans les applications web. CORS est une politique de sécurité qui empêche les requêtes d'être faites entre différents domaines ou origines.
+  Lorsque vous développez une application frontend (par exemple, en utilisant Angular, React, ou tout autre framework JavaScript) qui communique avec une application backend Spring Boot (ou toute autre API), vous pouvez rencontrer des problèmes liés à CORS si les deux applications ne sont pas sur le même domaine, le même port, ou la même origine.
+* @JsonIgnore est utilisée pour indiquer à Java de ne pas tenir compte d'un certain champ lors de la conversion d'un objet Java en format JSON et vice versa.
+* @RepositoryRestResource de Spring Data REST, on peut générer automatiquement tous les web services CRUD et autres
+  Méthode GET fournit par Spring Data REST et @RepositoryRestResource(path = "rest") qu'on peut utiliser pour la pagination, trie et recherche:
+  • http://localhost:8080/produits/rest
+  • http://localhost:8080/produits/rest/2
+  • http://localhost:8080/produits/rest?size=2&page=0
+  • http://localhost:8080/produits/rest?size=2&page=1
+  • http://localhost:8080/produits/rest?sort=nomProduit,desc
+  • http://localhost:8080/produits/rest?size=2&page=0&sort=prixProduit,desc
+  • http://localhost:8080/produits/rest/search
+  • http://localhost:8080/produits/rest/search/findByNomProduitContains?nom=PC
+  • http://localhost:8080/produits/rest/search/findByCategorieIdCat?id=1
+* @Projection permet de limiter le résultat JSON retourné à un certain nombre d’attributs. Par exemple on peut avoir besoin seulement de l’attribut nomProduit
+  Tester la projection suivante: @Projection(name = "nomProd", types = { Produit.class })
+    http://localhost:8080/produits/rest?projection=nomProd
 ### Interface
 
 * [JpaRepository]: En étendant cette interface dans une interface repository personnalisée pour une entité, vous bénéficiez automatiquement de ces fonctionnalités CRUD sans avoir à les implémenter manuellement.
