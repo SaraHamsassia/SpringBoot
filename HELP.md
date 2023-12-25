@@ -45,6 +45,16 @@ Spring web services
 * Allez dans "File" (Fichier) > "Project Structure" et ajouter le jdk17 dans SQK.
 * Pom.xml et Maven: Bien que le fichier pom.xml contienne la définition des dépendances de votre projet, pour voir les dépendances téléchargées et incluses dans IntelliJ IDEA, vous devriez les voir dans la vue "External Libraries" (Bibliothèques Externes) comme mentionné ci-dessus.
 
+* Lombok: Lombok est une bibliothèque java permettant de simplifier le code des entités en épargnant au développeur l’écriture des méthodes getters, setters, equals,.. Lombok injecte automatiquement ces méthode dans le byte code lors de la compilation.
+1) Ajouter la dépendance Lombok au fichier pom.xml puis rebuilder:
+  <dependency>
+    <groupId>org.projectlombok</groupId>
+    <artifactId>lombok</artifactId>
+  </dependency>
+2) Activer le Plugin Lombok :
+Accédez à Preferences (Préférences) > Build, Execution, Deployment (Compilation, Exécution, Déploiement) > Annotations processors.
+Cochez la case "Enable annotation processing"
+
 ### Annotation Spring
 
 * @Entity est une annotation de JPA (Java Persistence API) qui est utilisée dans les frameworks ORM (Object-Relational Mapping) tels que Hibernate pour indiquer qu'une classe représente une entité persistante qui doit être mappée à une table dans une base de données. Hibernate est un framework ORM populaire qui implémente JPA et facilite la persistance des objets dans une base de données relationnelle.
@@ -54,6 +64,8 @@ Spring web services
   * Injection de Dépendances : En annotant une classe avec @Service, vous pouvez utiliser l'annotation @Autowired pour injecter cette classe dans d'autres composants Spring, tels que des contrôleurs, d'autres services, des repositories, etc., en facilitant la gestion des dépendances entre les composants de l'application.
   * Composant Transactionnel : Les services annotés avec @Service peuvent également être annotés avec @Transactional pour activer la gestion des transactions sur les méthodes de service, permettant ainsi à Spring de gérer automatiquement les transactions pour les méthodes annotées avec @Transactional.
   * Logique Métier : En utilisant l'annotation @Service, vous pouvez encapsuler et isoler la logique métier de l'application dans des classes de service, ce qui permet de séparer la logique métier de la logique de présentation et d'accès aux données dans votre application.
+* @Data de lombok génère automatiquement les méthodes toString(), equals(), hashCode(), Getter et Setter
+* @AllArgsConstructor et @NoArgsConstructor de Lombok sont utilisées pour générer automatiquement des constructeurs dans une classe
 ### Interface
 
 * [JpaRepository]: En étendant cette interface dans une interface repository personnalisée pour une entité, vous bénéficiez automatiquement de ces fonctionnalités CRUD sans avoir à les implémenter manuellement.
