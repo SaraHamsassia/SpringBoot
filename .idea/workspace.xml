@@ -4,14 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="204eaf94-f798-4f37-b5d8-3c21dfd53b04" name="Changes" comment="Repository Produit et test unitaire.&#10;Ajout méthode toString Dans Catégorie car problème de séréalisation">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/SpringBoot3/RestControllers/ProduitRestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/SpringBoot3/entities/ProduitProjection.java" afterDir="false" />
+    <list default="true" id="204eaf94-f798-4f37-b5d8-3c21dfd53b04" name="Changes" comment="Utilisation de Spring Data Rest et de la projection">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/SpringBoot3/dto/ProduitDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HELP.md" beforeDir="false" afterPath="$PROJECT_DIR$/HELP.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SpringBoot3/RestControllers/ProduitRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/SpringBoot3/RestControllers/ProduitRestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SpringBoot3/SpringBoot3Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/SpringBoot3/SpringBoot3Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SpringBoot3/repository/ProduitRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/SpringBoot3/repository/ProduitRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SpringBoot3/services/ProduitService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/SpringBoot3/services/ProduitService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SpringBoot3/services/ProduitServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/SpringBoot3/services/ProduitServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -243,7 +244,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703514815383</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Utilisation de Spring Data Rest et de la projection">
+      <option name="closed" value="true" />
+      <created>1703522462092</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1703522462092</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -255,7 +264,8 @@
     <MESSAGE value="ajout de tests unitaires" />
     <MESSAGE value="Création du premier service" />
     <MESSAGE value="Repository Produit et test unitaire.&#10;Ajout méthode toString Dans Catégorie car problème de séréalisation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Repository Produit et test unitaire.&#10;Ajout méthode toString Dans Catégorie car problème de séréalisation" />
+    <MESSAGE value="Utilisation de Spring Data Rest et de la projection" />
+    <option name="LAST_COMMIT_MESSAGE" value="Utilisation de Spring Data Rest et de la projection" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -54,6 +54,7 @@ Spring web services
 2) Activer le Plugin Lombok :
 Accédez à Preferences (Préférences) > Build, Execution, Deployment (Compilation, Exécution, Déploiement) > Annotations processors.
 Cochez la case "Enable annotation processing"
+* Ajout de la dépendance ModelMapper: https://modelmapper.org/getting-started/
 
 ### Annotation Spring
 
@@ -84,6 +85,9 @@ Cochez la case "Enable annotation processing"
   • http://localhost:8080/produits/rest/search/findByCategorieIdCat?id=1
 * @Projection permet de limiter le résultat JSON retourné à un certain nombre d’attributs. Par exemple on peut avoir besoin seulement de l’attribut nomProduit
   Tester la projection suivante: @Projection(name = "nomProd", types = { Produit.class })
+* @Builder est une annotation de Lombok qui permet de générer automatiquement du code boilerplate pour les classes, comme les getters, setters, constructeurs, etc. 
+  Lombok simplifie le développement en réduisant le code répétitif.
+  L'annotation @Builder génère automatiquement un pattern de conception "Builder" pour la classe annotée, ce qui permet de construire des objets SANS FAIRE LE NEW.
     http://localhost:8080/produits/rest?projection=nomProd
 ### Interface
 

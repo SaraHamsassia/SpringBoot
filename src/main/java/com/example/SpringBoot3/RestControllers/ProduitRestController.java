@@ -1,5 +1,6 @@
 package com.example.SpringBoot3.RestControllers;
 
+import com.example.SpringBoot3.dto.ProduitDTO;
 import com.example.SpringBoot3.entities.Produit;
 import com.example.SpringBoot3.services.ProduitService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,19 +15,19 @@ public class ProduitRestController {
     @Autowired
     ProduitService produitService;
     @RequestMapping(method=RequestMethod.GET)
-    public List<Produit> getAllProduits(){
+    public List<ProduitDTO> getAllProduits(){
         return produitService.getAllProduits();
     }
     @RequestMapping(value="/{id}",method = RequestMethod.GET)
-    public Produit getProduitById(@PathVariable("id") Long id) {
+    public ProduitDTO getProduitById(@PathVariable("id") Long id) {
         return produitService.getProduit(id);
     }
     @RequestMapping(method = RequestMethod.POST)
-    public Produit createProduit(@RequestBody Produit produit) {
+    public ProduitDTO createProduit(@RequestBody ProduitDTO produit) {
         return produitService.saveProduit(produit);
     }
     @RequestMapping(method = RequestMethod.PUT)
-    public Produit updateProduit(@RequestBody Produit produit) {
+    public ProduitDTO updateProduit(@RequestBody ProduitDTO produit) {
         return produitService.updateProduit(produit);
     }
     @RequestMapping(value="/{id}",method = RequestMethod.DELETE)
