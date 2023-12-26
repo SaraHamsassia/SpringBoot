@@ -5,6 +5,8 @@ import com.example.SpringBoot3.entities.Categorie;
 import com.example.SpringBoot3.entities.Produit;
 import com.example.SpringBoot3.repository.ProduitRepository;
 import org.modelmapper.ModelMapper;
+import org.modelmapper.convention.MatchingStrategies;
+import org.modelmapper.spi.MatchingStrategy;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,6 +18,8 @@ import java.util.stream.Collectors;
 public class ProduitServiceImpl implements ProduitService{
     @Autowired
     ProduitRepository produitRepository;
+    @Autowired
+    ModelMapper modelMapper;
     @Override
     public ProduitDTO saveProduit(ProduitDTO p) {
         return convertEntityToDto(produitRepository.save(convertDtoToEntity(p)));
@@ -86,6 +90,10 @@ public class ProduitServiceImpl implements ProduitService{
     }
     @Override
     public ProduitDTO convertEntityToDto(Produit produit) {
+        modelMapper.getConfiguration().setMatchingStrategy(MatchingStrategies.LOOSE);
+        ProduitDTO produitDTO = modelMapper.map(produit, ProduitDTO.class);
+        return produitDTO;
+        /*
         return ProduitDTO.builder()
                 .idProduit(produit.getIdProduit())
                 .nomProduit(produit.getNomProduit())
@@ -94,9 +102,12 @@ public class ProduitServiceImpl implements ProduitService{
                 //.categorie(produit.getCategorie())
                 .nomCat(produit.getCategorie().getNomCat())
                 .build();
+         */
     }
     @Override
     public Produit convertDtoToEntity(ProduitDTO produitDto) {
+        return modelMapper.map(produitDto, Produit.class);
+        /*
         Produit produit = new Produit();
         produit.setIdProduit(produitDto.getIdProduit());
         produit.setNomProduit(produitDto.getNomProduit());
@@ -104,5 +115,7 @@ public class ProduitServiceImpl implements ProduitService{
         produit.setDateCréation(produitDto.getDateCreation());
         produit.setCategorie(produitDto.getCategorie());
         return produit;
+        */
+
     }
 }
