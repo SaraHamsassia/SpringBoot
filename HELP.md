@@ -58,6 +58,8 @@ Cochez la case "Enable annotation processing"
 * Installer Homebrew sur votre Mac, dans le terminal executez les deux commandes suivantes:
 1) [/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"]
 2) [eval "$(/opt/homebrew/bin/brew shellenv)"]
+* Ajouter l'extension 'Json Foramatter' dans les paramètres de chrome (paramètres -> extension).
+* Téléchargez Postman depuis google pour tester les requêtes HTTP.
 
 ### Annotation Spring
 

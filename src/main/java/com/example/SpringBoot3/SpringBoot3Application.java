@@ -1,5 +1,6 @@
 package com.example.SpringBoot3;
 
+import com.example.SpringBoot3.entities.Categorie;
 import com.example.SpringBoot3.entities.Produit;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,7 +19,7 @@ public class SpringBoot3Application implements CommandLineRunner {
 	}
 	@Override
 	public void run(String... args) throws Exception {
-		repositoryRestConfiguration.exposeIdsFor(Produit.class);
+		repositoryRestConfiguration.exposeIdsFor(Produit.class, Categorie.class);
 	}
 	@Bean
 	public ModelMapper modelMapper()
